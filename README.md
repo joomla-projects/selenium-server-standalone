@@ -1,15 +1,17 @@
 # selenium-server-standalone
 
-![Travis CI](https://travis-ci.org/sveneisenschmidt/selenium-server-standalone.svg?branch=master) [![Latest Stable Version](https://poser.pugx.org/se/selenium-server-standalone/v/stable)](https://packagist.org/packages/se/selenium-server-standalone) [![Total Downloads](https://poser.pugx.org/se/selenium-server-standalone/downloads)](https://packagist.org/packages/se/selenium-server-standalone) [![Latest Unstable Version](https://poser.pugx.org/se/selenium-server-standalone/v/unstable)](https://packagist.org/packages/se/selenium-server-standalone) [![License](https://poser.pugx.org/se/selenium-server-standalone/license)](https://packagist.org/packages/se/selenium-server-standalone)
-
 
 Composer distribution of Selenium Server Standalone, the browser automation framework.
+
+## Version
+Release numbers are synchronised with the Selenium versions.
+Version of this release is *v2.47.1*
 
 ## Installation
 
 #### Inside your composer-powered project
 ```bash
-composer require se/selenium-server-standalone
+composer require joomla-projects/selenium-server-standalone
 ```
 
 #### Standalone
@@ -32,11 +34,9 @@ Arguments are supported.
 $ bin/selenium-server-standalone -port 4445
 ```
 
-## Tests
 
-```bash
-bin/phpunit
-```
 
-Release numbers are synchronised with the Selenium versions.
-Version of this release is *v2.47.1*
+## Acknowledgements
+This project was forked from the original [https://github.com/sveneisenschmidt/selenium-server-standalone](https://github.com/sveneisenschmidt/selenium-server-standalone)
+
+Thanks to the [Selenium Project](http://docs.seleniumhq.org/)
