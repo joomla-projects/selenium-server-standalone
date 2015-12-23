@@ -42,3 +42,4 @@ $ bin/selenium-server-standalone -port 4445
 This project was forked from the original [https://github.com/sveneisenschmidt/selenium-server-standalone](https://github.com/sveneisenschmidt/selenium-server-standalone)
 
 Thanks to the [Selenium Project](http://docs.seleniumhq.org/)
+
