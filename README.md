@@ -7,7 +7,7 @@ Composer distribution of Selenium Server Standalone, the browser automation fram
 
 ## Version
 Release numbers are synchronised with the Selenium versions.
-Version of this release is *v2.48.2*
+Version of this release is *v2.49.0*
 
 ## Installation
 
