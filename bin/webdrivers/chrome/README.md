@@ -27,7 +27,7 @@ For Linux:
 ```
 ```
 64bit
--Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\chrome\chromedriver_linux_32
+-Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\chrome\chromedriver_linux_64
 ```
 
 ## Acknowledgements
