@@ -4,30 +4,37 @@ Chrome webdriver for Selenium Server Standalone, the browser automation framewor
 
 ## Version
 Release numbers are synchronised with the Selenium versions.
-Version of this release is *v2.21.0* 
+Version of this release is *v2.21.0*
 
 ## Installation
 
 #### Inside your robofile
 
+Add the follow code after the jar file
+
 For Windows:
 ```
--Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\chrome\chromedriver.exe
+-Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\\chrome\\chromedriver.exe
 ```
 
 For Mac:
 ```
--Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\chrome\chromedriver_mac
+-Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\\chrome\\chromedriver_mac
 ```
 
 For Linux:
 ```
 32bit
--Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\chrome\chromedriver_linux_32
+-Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\\chrome\\chromedriver_linux_32
 ```
 ```
 64bit
--Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\chrome\chromedriver_linux_64
+-Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\\chrome\\chromedriver_linux_64
+```
+
+Change the browser setting on /tests/acceptance.suite.yml to:
+```
+browser: 'chrome'
 ```
 
 ## Acknowledgements
