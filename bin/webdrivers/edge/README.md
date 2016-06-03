@@ -14,7 +14,7 @@ Version of this release is *v2.0 Fall update*
 
 #### Inside your robofile
 
-Add the follow code after the jar file
+Add the following line of code after the jar file
 
 ```
 -Dwebdriver.edge.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\\edge\\MicrosoftWebDriver.exe

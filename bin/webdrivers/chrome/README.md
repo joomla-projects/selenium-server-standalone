@@ -10,7 +10,7 @@ Version of this release is *v2.21.0*
 
 #### Inside your robofile
 
-Add the follow code after the jar file
+Add the following line of code after the jar file
 
 For Windows:
 ```

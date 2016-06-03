@@ -19,7 +19,7 @@ Version of this release is *v2.52.1*
 
 #### Inside your robofile
 
-Add the follow code after the jar file
+Add the following line of code after the jar file
 
 ```
 -Dwebdriver.ie.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\\internet-explorer32\\IEDriverServer.exe
