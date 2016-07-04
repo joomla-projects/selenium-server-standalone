@@ -7,13 +7,13 @@ Composer distribution of Selenium Server Standalone, the browser automation fram
 
 ## Version
 Release numbers are synchronised with the Selenium versions.
-Version of this release is *v2.53.0* 
+Version of this release is *v2.53.1* 
 
 Selenium Changelog: [https://github.com/SeleniumHQ/selenium/blob/master/java/CHANGELOG](https://github.com/SeleniumHQ/selenium/blob/master/java/CHANGELOG)
 
 Original jar files and checksums: [http://selenium-release.storage.googleapis.com/index.html](http://selenium-release.storage.googleapis.com/index.html)
 
-## Webdriver 
+## Webdriver
 
 * Google Chrome version 2.21
 * Internet Explorer 32-bit version 2.52.1
