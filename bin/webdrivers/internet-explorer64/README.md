@@ -4,7 +4,7 @@ Internet explorer 64bit webdriver for Selenium Server Standalone, the browser au
 
 ## Version
 Release numbers are synchronised with the Selenium versions.
-Version of this release is *v2.52.1* 
+Version of this release is *v2.53.1*
 
 ## Installation
 
