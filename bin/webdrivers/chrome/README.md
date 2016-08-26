@@ -10,24 +10,31 @@ Version of this release is *v2.23.0*
 
 #### Inside your robofile
 
+Add the following line of code after the jar file
+
 For Windows:
 ```
--Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\chrome\chromedriver.exe
+-Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\\chrome\\chromedriver.exe
 ```
 
 For Mac:
 ```
--Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\chrome\chromedriver_mac
+-Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\\chrome\\chromedriver_mac
 ```
 
 For Linux:
 ```
 32bit
--Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\chrome\chromedriver_linux_32
+-Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\\chrome\\chromedriver_linux_32
 ```
 ```
 64bit
--Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\chrome\chromedriver_linux_64
+-Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\\chrome\\chromedriver_linux_64
+```
+
+Change the browser setting on /tests/acceptance.suite.yml to:
+```
+browser: 'chrome'
 ```
 
 ## Acknowledgements

@@ -8,9 +8,26 @@ Version of this release is *v2.53.1*
 
 ## Installation
 
+#### Set IE settings
+
+1. Open internet explorer.
+2. Navigate to Tools->Option
+3. Navigate to Security Tab
+4. Click on "Reset All Zones to Default level" button
+5. Now for all option like Internet,Intranet,Trusted Sites and Restricted Site enable "Enable Protected" mode check-box.
+6. Set IE zoom level to 100%
+
 #### Inside your robofile
+
+Add the following line of code after the jar file
+
 ```
--Dwebdriver.ie.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\internet-explorer32\MicrosoftWebDriver.exe
+-Dwebdriver.ie.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\\internet-explorer32\\IEDriverServer.exe
+```
+
+Change the browser setting on /tests/acceptance.suite.yml to:
+```
+browser: 'internet explorer'
 ```
 
 ## Acknowledgements

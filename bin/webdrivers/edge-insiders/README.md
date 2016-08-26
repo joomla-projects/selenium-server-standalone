@@ -8,9 +8,21 @@ Version of this release is *v3.14393*
 
 ## Installation
 
+#### Set IE settings
+
+1. Set Edge zoom level to 100%
+
 #### Inside your robofile
+
+Add the following line of code after the jar file
+
 ```
--Dwebdriver.edge.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\edge-insiders\MicrosoftWebDriver.exe
+-Dwebdriver.edge.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\\edge-insiders\\MicrosoftWebDriver.exe
+```
+
+Change the browser setting on /tests/acceptance.suite.yml to:
+```
+browser: 'MicrosoftEdge'
 ```
 
 ## Acknowledgements
