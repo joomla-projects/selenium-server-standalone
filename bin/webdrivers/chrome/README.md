@@ -10,7 +10,7 @@ Version of this release is *v2.53.1.1*
 
 ### Inside your robofile (RoboFile.php in the root directory)
 
-Add the following line of code after the call up the jar file:
+Add the following line of code after the call up of the jar file:
 
 ####For Windows:
 ```
