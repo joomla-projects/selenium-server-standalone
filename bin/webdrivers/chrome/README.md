@@ -32,7 +32,7 @@ Add the following line of code after the call up of the jar file:
 -Dwebdriver.chrome.driver=./vendor/joomla-projects/selenium-server-standalone/bin/webdrivers/chrome/chromedriver_linux_64
 ```
 
-If use Linux on a 64bit machine your robofile.php should look like this:
+If use Windows or Linux on a 64bit machine your robofile.php should look like this:
 ```
   ...
 	/**
