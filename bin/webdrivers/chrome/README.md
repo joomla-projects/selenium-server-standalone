@@ -50,7 +50,7 @@ If use Linux on a 64bit machine your robofile.php should look like this:
 		}
 		else
 		{
-			$this->_exec("START java.exe -jar .\\tests\\codeception\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\selenium-server-standalone.jar");
+			$this->_exec("START java.exe -jar -Dwebdriver.chrome.driver=.\\tests\\codeception\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\selenium-server-standalone.jar");
 		}
     ...
 ```
