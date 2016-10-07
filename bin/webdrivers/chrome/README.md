@@ -17,9 +17,9 @@ Add the following line of code after the call up of the jar file:
 -Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\\chrome\\chromedriver.exe
 ```
 
-####For Mac:
+For Mac (v2.24.0):
 ```
--Dwebdriver.chrome.driver=./vendor/joomla-projects/selenium-server-standalone/bin/webdrivers/chrome/chromedriver_mac
+-Dwebdriver.chrome.driver=./vendor/joomla-projects/selenium-server-standalone/bin/webdrivers/chrome/chromedriver_mac -debug
 ```
 
 ####For Linux:
@@ -77,7 +77,7 @@ browser: 'chrome'
 ```
 
 ###Have a look into the Logfile
-If you have problems starting selenium-server-standalone with your prefered webdriver have a look into the file selenium.log in the root directory. 
+If you have problems starting selenium-server-standalone with your prefered webdriver have a look into the file selenium.log in the root directory.
 
 ## Acknowledgements
 This project was forked from the original [https://github.com/sveneisenschmidt/selenium-server-standalone](https://github.com/sveneisenschmidt/selenium-server-standalone)
