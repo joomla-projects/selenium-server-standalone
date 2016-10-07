@@ -17,9 +17,9 @@ For Windows:
 -Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\\chrome\\chromedriver.exe
 ```
 
-For Mac:
+For Mac (v2.24.0):
 ```
--Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\\chrome\\chromedriver_mac
+-Dwebdriver.chrome.driver=./vendor/joomla-projects/selenium-server-standalone/bin/webdrivers/chrome/chromedriver_mac -debug
 ```
 
 For Linux:
