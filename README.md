@@ -49,7 +49,11 @@ Arguments are supported.
 $ vendor/bin/selenium-server-standalone -port 4445
 ```
 
+To shut down Selenium you can visit:
 
+```bash
+http://localhost:4444/selenium-server/driver/?cmd=shutDownSeleniumServer
+```
 
 ## Acknowledgements
 This project was forked from the original [https://github.com/sveneisenschmidt/selenium-server-standalone](https://github.com/sveneisenschmidt/selenium-server-standalone)
