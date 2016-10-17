@@ -3,7 +3,7 @@
 New Firefox Marionette driver for Selenium Server Standalone, the browser automation framework.
 
 ## Version
-Version of this release is *v0.10.0*
+Version of this release is *v0.11.1*
 
 ## Installation
 
