@@ -4,7 +4,7 @@ Chrome webdriver for Selenium Server Standalone, the browser automation framewor
 
 ## Version
 Release numbers are synchronised with the Selenium versions.
-Version of this release is *v2.24.0*
+Version of this release is *v2.25.0*
 
 ## Installation
 
