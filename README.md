@@ -15,11 +15,12 @@ Original jar files and checksums: [http://selenium-release.storage.googleapis.co
 
 ## Webdriver
 
-* Google Chrome version 2.21
-* Internet Explorer 32-bit version 2.52.1
-* Internet explorer 64-bit version 2.52.1
-* Microsoft Edge version 2.0
-* Microsoft Edge Insiders version 3.14342
+* Google Chrome version 2.24
+* Internet Explorer 32-bit version 2.53.1
+* Internet explorer 64-bit version 2.53.1
+* Microsoft Edge version 3.14393
+* Microsoft Edge Insiders version 3.14393
+* Firefox Gecko / Marionette Driver version 0.11.1
 
 ## Installation
 
@@ -48,7 +49,11 @@ Arguments are supported.
 $ vendor/bin/selenium-server-standalone -port 4445
 ```
 
+To shut down Selenium you can visit:
 
+```bash
+http://localhost:4444/selenium-server/driver/?cmd=shutDownSeleniumServer
+```
 
 ## Acknowledgements
 This project was forked from the original [https://github.com/sveneisenschmidt/selenium-server-standalone](https://github.com/sveneisenschmidt/selenium-server-standalone)
