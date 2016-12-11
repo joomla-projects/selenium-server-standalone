@@ -77,14 +77,11 @@ class Selenium {
 	public function getWebdriver()
 	{
 		$browser = $this->browser;
+		$config = parse_ini_file(__DIR__ . '/config.dist.ini', true);
 
 		if (file_exists(__DIR__ . '/config.ini'))
 		{
 			$config = parse_ini_file(__DIR__ . '/config.ini', true);
-		}
-		else
-		{
-			$config = parse_ini_file(__DIR__ . '/config.dist.ini', true);
 		}
 
 		if ($browser == 'chrome')
@@ -115,7 +112,7 @@ class Selenium {
 		}
 		else
 		{
-			print('No driver for your browser. Check your browser in acceptance.suite.yml and the webDrivers in codeception.yml');
+			print('No driver for your browser. Check your browser configuration in config.ini');
 
 			// We can't do anything without a driver, exit
 			exit(1);
@@ -133,14 +130,14 @@ class Selenium {
 	 */
 	private function getOs()
 	{
-		$os = php_uname('s');
+		$os = strtolower(php_uname('s'));
 
-		if (strpos(strtolower($os), 'windows') !== false)
+		if (strpos($os, 'windows') !== false)
 		{
 			return 'windows';
 		}
 		// Who have thought that Mac is actually Darwin???
-		elseif (strpos(strtolower($os), 'darwin') !== false)
+		elseif (strpos($os, 'darwin') !== false)
 		{
 			return 'mac';
 		}
