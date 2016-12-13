@@ -13,7 +13,7 @@ You do not have to do anything if you want to use ChromeDriver. Everything works
 
 ### Inside your robofile (RoboFile.php in the root directory)
 
-Inside your robofile (RoboFile.php in the root directory) ``$this->getWebDriver()`` will finde the correct webdriver for you.
+Inside your robofile (RoboFile.php in the root directory) ``$this->getWebDriver()`` will find the correct webdriver for you.
 
 ```
   ...
