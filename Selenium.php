@@ -56,15 +56,15 @@ class Selenium {
 
 			print('executing: ' . $command);
 			exec($command);
+			return;
 		}
-		else
-		{
-			$command = "START java.exe -jar " . $this->getWebDriver() . $this->seleniumParams . ' ' . __DIR__ . '\bin\selenium-server-standalone.jar';
 
-			print('executing: ' . $command);
+		$command = "START java.exe -jar " . $this->getWebDriver() . $this->seleniumParams . ' ' . __DIR__ . '\bin\selenium-server-standalone.jar';
 
-			pclose(popen($command, 'r'));
-		}
+		print('executing: ' . $command);
+
+		pclose(popen($command, 'r'));
+
 	}
 
 	/**
@@ -130,14 +130,14 @@ class Selenium {
 	 */
 	private function getOs()
 	{
-		$os = strtolower(php_uname('s'));
+		$os = php_uname('s');
 
-		if (strpos($os, 'windows') !== false)
+		if (stripos($os, 'windows') !== false)
 		{
 			return 'windows';
 		}
 		// Who have thought that Mac is actually Darwin???
-		elseif (strpos($os, 'darwin') !== false)
+		elseif (stripos($os, 'darwin') !== false)
 		{
 			return 'mac';
 		}
