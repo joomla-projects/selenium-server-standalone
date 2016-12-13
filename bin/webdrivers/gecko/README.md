@@ -13,7 +13,7 @@ You do not have to edit your robofile if you want to use Firefox Gecko / Marione
 
 
 
-Inside your robofile (RoboFile.php in the root directory) ``$this->getWebDriver()`` will finde the correct webdriver for you.
+Inside your robofile (RoboFile.php in the root directory) ``$this->getWebDriver()`` will find the correct webdriver for you.
 
 ```
   ...
@@ -39,7 +39,9 @@ Inside your robofile (RoboFile.php in the root directory) ``$this->getWebDriver(
 
 
 ###Setting on /tests/codeception/acceptance.suite.yml are browser
-The default browser setting on /tests/codeception/acceptance.suite.yml for the browser is ``browser: 'chrome'``. Change the browser setting on /tests/codeception/acceptance.suite.yml to ``browser: 'firefox'``
+The default browser setting on /tests/codeception/acceptance.suite.yml for the browser is ``browser: 'chrome'``. 
+Just make sure that the browser in your acceptance.suite.yml is set to firefox.
+Change the browser setting on /tests/codeception/acceptance.suite.yml to ``browser: 'firefox'``
 
 ```
    ...
