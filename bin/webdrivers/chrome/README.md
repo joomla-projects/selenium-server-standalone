@@ -3,36 +3,18 @@
 Chrome webdriver for Selenium Server Standalone, the browser automation framework.
 
 ## Version
-Release numbers are synchronised with the Selenium versions.
 Version of this release is *v2.25.0*
 
 ## Installation
 
+You do not have to do anything if you want to use ChromeDriver. Everything works out of the box :)
+
+## Properties 
+
 ### Inside your robofile (RoboFile.php in the root directory)
 
-Add the following line of code after the call up of the jar file:
+Inside your robofile (RoboFile.php in the root directory) ``$this->getWebDriver()`` will finde the correct webdriver for you.
 
-####For Windows:
-```
--Dwebdriver.chrome.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\\chrome\\chromedriver.exe
-```
-
-For Mac (v2.24.0):
-```
--Dwebdriver.chrome.driver=./vendor/joomla-projects/selenium-server-standalone/bin/webdrivers/chrome/chromedriver_mac -debug
-```
-
-####For Linux:
-```
-32bit
--Dwebdriver.chrome.driver=./vendor/joomla-projects/selenium-server-standalone/bin/webdrivers/chrome/chromedriver_linux_32
-```
-```
-64bit
--Dwebdriver.chrome.driver=./vendor/joomla-projects/selenium-server-standalone/bin/webdrivers/chrome/chromedriver_linux_64
-```
-
-If use Windows or Linux on a 64bit machine your robofile.php should look like this:
 ```
   ...
 	/**
@@ -44,36 +26,34 @@ If use Windows or Linux on a 64bit machine your robofile.php should look like th
 	 */
 	public function runSelenium()
 	{
-		if (strtoupper(substr(PHP_OS, 0, 3)) !== 'WIN')
+		if (!$this->isWindows())
 		{
-			$this->_exec($this->testsPath . "vendor/bin/selenium-server-standalone -Dwebdriver.chrome.driver=./vendor/joomla-projects/selenium-server-standalone/bin/webdrivers/chrome/chromedriver_linux_64 >> selenium.log 2>&1 &");
+			$this->_exec($this->testsPath . "vendor/bin/selenium-server-standalone " . $this->getWebDriver() . ' >> selenium.log 2>&1 &');
 		}
 		else
 		{
-			$this->_exec("START java.exe -jar -Dwebdriver.chrome.driver=.\\tests\\codeception\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\selenium-server-standalone.jar");
+			$this->_exec("START java.exe -jar " . $this->getWebDriver() . ' tests\codeception\vendor\joomla-projects\selenium-server-standalone\bin\selenium-server-standalone.jar ');
 		}
     ...
 ```
 
-After that install ChromeDriver:
 
+###The default browser setting on /tests/codeception/acceptance.suite.yml are browser: ``'chrome'``:
 ```
-sudo apt-get install unzip
-
-wget -N http://chromedriver.storage.googleapis.com/2.20/chromedriver_linux64.zip
-unzip chromedriver_linux64.zip
-chmod +x chromedriver
-
-sudo mv -f chromedriver /usr/local/share/chromedriver
-sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
-sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
-```
-
-You can find the ChromeDriver releases on the webpage http://chromedriver.storage.googleapis.com/. If you’re using a 32-bit system the ChromeDriver download used above won’t work!
-
-###Change the browser setting on /tests/codeception/acceptance.suite.yml to:
-```
-browser: 'chrome'
+   ...
+    class_name: AcceptanceTester
+    modules:
+        enabled:
+            - Asserts
+            - JoomlaBrowser
+            - Helper\Acceptance
+            - Helper\JoomlaDb
+        config:
+            JoomlaBrowser:
+                url: 'http://localhost/gsoc16_browser-automated-tests/tests/codeception/joomla-cms3'     # the url that points to the joomla installation at /tests/system/joomla-cms
+                browser: 'chrome'
+                window_size: 1024x768
+   ...
 ```
 
 ###Have a look into the Logfile
