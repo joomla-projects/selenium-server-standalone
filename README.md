@@ -55,6 +55,17 @@ To shut down Selenium you can visit:
 http://localhost:4444/selenium-server/driver/?cmd=shutDownSeleniumServer
 ```
 
+## Usage with PHP
+If you want to launch Selenium from a PHP application, you could use the Selenium class.
+
+```php
+$selenium = new Selenium(array('browser' => 'chrome', 'insider' => false, 'selenium_params' => array()));
+$selenium->run();
+```
+
+Possible values for browser are chrome|firefox|MicrosoftEdge|internet explorer
+If you are in the Windows Insider program, you would need the edge-insiders browser. So set the insider flag to true.
+
 ## Acknowledgements
 This project was forked from the original [https://github.com/sveneisenschmidt/selenium-server-standalone](https://github.com/sveneisenschmidt/selenium-server-standalone)
 
