@@ -3,14 +3,14 @@
 Chrome webdriver for Selenium Server Standalone, the browser automation framework.
 
 ## Version
-Version of this release is *v2.26.0*
+Version of this release is *v2.27.0*
 https://sites.google.com/a/chromium.org/chromedriver/downloads
 
 ## Installation
 
 You do not have to do anything if you want to use ChromeDriver. Everything works out of the box :)
 
-## Properties 
+## Properties
 
 ### Inside your robofile (RoboFile.php in the root directory)
 

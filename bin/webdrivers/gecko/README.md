@@ -3,7 +3,7 @@
 New Firefox Marionette driver for Selenium Server Standalone, the browser automation framework.
 
 ## Version
-Version of this release is *v0.11.1* (https://github.com/mozilla/geckodriver/releases/tag/v0.11.1)
+Version of this release is *v0.13* (https://github.com/mozilla/geckodriver/releases/tag/v0.13)
 
 ## Installation
 
@@ -39,7 +39,7 @@ Inside your robofile (RoboFile.php in the root directory) ``$this->getWebDriver(
 
 
 ###Setting on /tests/codeception/acceptance.suite.yml are browser
-The default browser setting on /tests/codeception/acceptance.suite.yml for the browser is ``browser: 'chrome'``. 
+The default browser setting on /tests/codeception/acceptance.suite.yml for the browser is ``browser: 'chrome'``.
 Just make sure that the browser in your acceptance.suite.yml is set to firefox.
 Change the browser setting on /tests/codeception/acceptance.suite.yml to ``browser: 'firefox'``
 
