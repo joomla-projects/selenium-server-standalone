@@ -15,11 +15,11 @@ Original jar files and checksums: [http://selenium-release.storage.googleapis.co
 
 ## Webdriver
 
-* Google Chrome version 2.28
+* Google Chrome version 2.29
 * Internet Explorer 32-bit version 3.3.0
 * Internet explorer 64-bit version 3.3.0
-* Microsoft Edge version 3.14393
-* Microsoft Edge Insiders version 10.15055
+* Microsoft Edge version 4.15063
+* Microsoft Edge Insiders version 10.0.16176.1000
 * Firefox Gecko / Marionette Driver version 0.15
 
 ## Installation
