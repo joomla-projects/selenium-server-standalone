@@ -18,6 +18,9 @@
             "email": "javier.gomez@community.joomla.org"
         }
     ],
+    "autoload": {
+        "files": ["Selenium.php"]
+    },
     "require-dev": {
     },
     "config": {
