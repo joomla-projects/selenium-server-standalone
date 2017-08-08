@@ -4,7 +4,7 @@ Internet explorer 64bit webdriver for Selenium Server Standalone, the browser au
 
 ## Version
 Release numbers are synchronised with the Selenium versions.
-Version of this release is *v3.4.0*
+Version of this release is *v3.4.0.1*
 
 ## Installation
 This is required if you want to make use of the latest and greatest features of the WebDriver InternetExplorerDriver. Please make sure that this is available on your $PATH (or %PATH% on Windows) in order for the IE Driver to work as expected.
