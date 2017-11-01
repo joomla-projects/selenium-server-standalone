@@ -20,7 +20,7 @@ Original jar files and checksums: [http://selenium-release.storage.googleapis.co
 * Internet Explorer 64-bit version 3.6.0
 * Microsoft Edge version 16.16299
 * Microsoft Edge Insiders version 10.0.17017.1000
-* Firefox Gecko / Marionette Driver version 0.19 •geckodriver now recommends Firefox 55 and greater. *x32 windows = 0.18
+* Firefox Gecko / Marionette Driver version 0.19.1 •geckodriver now recommends Firefox 55 and greater. *x32 windows = 0.19.0
 
 ## Installation
 
