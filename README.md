@@ -15,7 +15,7 @@ Original jar files and checksums: [http://selenium-release.storage.googleapis.co
 
 ## Webdriver
 
-* Google Chrome version 2.33
+* Google Chrome version 2.34
 * Internet Explorer 32-bit version 3.8.0
 * Internet Explorer 64-bit version 3.8.0
 * Microsoft Edge version 16.16299
