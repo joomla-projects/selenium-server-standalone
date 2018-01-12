@@ -8,4 +8,14 @@ while [ -h "$SELF_PATH" ]; do
     SELF_PATH=$(cd "$DIR" && cd $(dirname -- "$SYM") && pwd)/$(basename -- "$SYM")
 done
 
+if command -v 'cygpath' >/dev/null 2>&1; then
+    # Cygwin paths start with /cygdrive/ which will break windows PHP,
+    # so we need to translate the dir path to windows format. However
+    # we could be using cygwin PHP which does not require this, so we
+    # test if the path to PHP starts with /cygdrive/ rather than /usr/bin
+    if [[ $(which php) == /cygdrive/* ]]; then
+        SELF_PATH=$(cygpath -m "$SELF_PATH");
+    fi
+fi
+
 java -jar "$@" "${SELF_PATH}.jar"
