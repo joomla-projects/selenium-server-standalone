@@ -3,11 +3,9 @@
 Chrome webdriver for Selenium Server Standalone, the browser automation framework.
 
 ## Version
-Version of this release is *v2.35.0*
+Version of this release is *v2.37.0*
 https://sites.google.com/a/chromium.org/chromedriver/downloads
-Supports Chrome v61-63
-
-Linux 32 bit = *v2.34.0* deprecated
+Supports Chrome v64-66
 
 ## Installation
 
@@ -66,4 +64,4 @@ If you have problems starting selenium-server-standalone with your prefered webd
 ## Acknowledgements
 This project was forked from the original [https://github.com/sveneisenschmidt/selenium-server-standalone](https://github.com/sveneisenschmidt/selenium-server-standalone)
 
-Thanks to the [Selenium Project](http://docs.seleniumhq.org/)
+Thanks to the [Selenium Project](:http://docs.seleniumhq.org/)
