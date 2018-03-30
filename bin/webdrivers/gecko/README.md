@@ -12,31 +12,7 @@ Version of this release is *v0.20* (https://github.com/mozilla/geckodriver/relea
 
 You do not have to edit your robofile if you want to use Firefox Gecko / Marionette webdriver.
 
-
-
-Inside your robofile (RoboFile.php in the root directory) ``$this->getWebDriver()`` will find the correct webdriver for you.
-
-```
-  ...
-	/**
-	 * Runs Selenium Standalone Server.
-	 *
-	 * @since   __DEPLOY_VERSION__
-	 *
-	 * @return  void
-	 */
-	public function runSelenium()
-	{
-		if (!$this->isWindows())
-		{
-			$this->_exec($this->testsPath . "vendor/bin/selenium-server-standalone " . $this->getWebDriver() . ' >> selenium.log 2>&1 &');
-		}
-		else
-		{
-			$this->_exec("START java.exe -jar " . $this->getWebDriver() . ' tests\codeception\vendor\joomla-projects\selenium-server-standalone\bin\selenium-server-standalone.jar ');
-		}
-    ...
-```
+Make sure you add the webdriver directory to your $PATH in order for selenium to find it.
 
 
 ###Setting on /tests/codeception/acceptance.suite.yml are browser
