@@ -7,8 +7,12 @@
         "testing"
     ],
     "homepage": "https://github.com/joomla-projects/selenium-server-standalone",
-    "license": "Apache 2.0", 
+    "license": "Apache-2.0", 
     "authors": [
+        {
+            "name": "Puneet Kala",
+            "email": "puneet.kala@community.joomla.org"
+        },
         {
             "name": "Sven Eisenschmidt",
             "email": "sven.eisenschmidt@gmail.com"
