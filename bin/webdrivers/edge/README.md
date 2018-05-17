@@ -4,8 +4,8 @@ Edge webdriver for Selenium Server Standalone, the browser automation framework.
 
 ## Version
 Release numbers are synchronised with the Selenium versions.
-Version of this release is *v4.16299*
-*Edge version supported: 16.16299*
+Version of this release is *6.17134*
+*Edge version supported: 17.17134*
 
 ## Installation
 
