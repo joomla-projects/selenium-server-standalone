@@ -10,6 +10,10 @@ Version of this release is *10.0.17666.1000*
 ## Installation
 Settings - Apps - Manage optional features - Add a feature - select Microsoft Webdriver
 
+To install run the following in an elevated command prompt:
+
+DISM.exe /Online /Add-Capability /CapabilityName:Microsoft.WebDriver~~~~0.0.1.0
+
 
 #### Set IE settings
 

@@ -3,9 +3,9 @@
 Chrome webdriver for Selenium Server Standalone, the browser automation framework.
 
 ## Version
-Version of this release is *v2.38.0*
+Version of this release is *v2.41.0*
 https://sites.google.com/a/chromium.org/chromedriver/downloads
-Supports Chrome v64-67
+Supports Chrome v67-69
 
 ## Installation
 
