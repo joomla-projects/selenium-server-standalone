@@ -3,9 +3,9 @@
 Chrome webdriver for Selenium Server Standalone, the browser automation framework.
 
 ## Version
-Version of this release is *v2.41.0*
+Version of this release is *v2.43.0*
 https://sites.google.com/a/chromium.org/chromedriver/downloads
-Supports Chrome v67-69
+Supports Chrome v69-71
 
 ## Installation
 
@@ -15,8 +15,7 @@ Make sure you add the webdriver directory to your $PATH in order for selenium to
 
 ###The default browser setting on /tests/codeception/acceptance.suite.yml are browser: ``'chrome'``:
 ```
-   ...
-    class_name: AcceptanceTester
+a    class_name: AcceptanceTester
     modules:
         enabled:
             - Asserts

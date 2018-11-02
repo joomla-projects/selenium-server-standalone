@@ -17,7 +17,6 @@ class Selenium {
 	 *
 	 * @param   array  $options  - array(
 	 *                              'browser' => 'firefox|chrome|MicrosoftEdge|Internet Explorer',
-	 *                              'insider' => true|false,
 	 *                              'selenium_params' => array()
 	 *                          )
 	 */
@@ -30,8 +29,6 @@ class Selenium {
 		}
 
 		$this->browser = $options['browser'];
-
-		$this->isInsider = isset($options['insider']) ? $options['insider'] : false;
 
 		$this->seleniumParams = '';
 
@@ -102,11 +99,7 @@ class Selenium {
 		}
 
 		// All the exceptions in the world...
-		if ($browser == 'MicrosoftEdge' && $this->isInsider)
-		{
-			$driver['path'] = __DIR__ . '/' . $config['MicrosoftEdge']['windowsInsider'];
-		}
-		elseif (isset($config[$browser][$this->getOs()]))
+		if (isset($config[$browser][$this->getOs()]))
 		{
 			$driver['path'] = __DIR__ . '/' . $config[$browser][$this->getOs()];
 		}

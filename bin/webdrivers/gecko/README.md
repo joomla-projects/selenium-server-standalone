@@ -3,7 +3,7 @@
 New Firefox Marionette driver for Selenium Server Standalone, the browser automation framework.
 
 ## Version
-Version of this release is *v0.21* (https://github.com/mozilla/geckodriver/releases/tag/v0.21.0)
+Version of this release is *v0.23* (https://github.com/mozilla/geckodriver/releases/tag/v0.23.0)
 
 
 ## Installation
