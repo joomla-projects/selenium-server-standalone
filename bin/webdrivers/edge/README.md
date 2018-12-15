@@ -4,10 +4,14 @@ Edge webdriver for Selenium Server Standalone, the browser automation framework.
 
 ## Version
 Release numbers are synchronised with the Selenium versions.
-Version of this release is *6.17134*
-*Edge version supported: 17.17134*
+
+Microsoft WebDriver is now a Windows Feature on Demand.
+To install run the following in an elevated command prompt:
+DISM.exe /Online /Add-Capability /CapabilityName:Microsoft.WebDriver~~~~0.0.1.0
 
 ## Installation
+
+1. Settings - Apps - Manage optional features - Add a feature - select Microsoft Webdriver
 
 #### Set IE settings
 
@@ -18,7 +22,7 @@ Version of this release is *6.17134*
 Add the following line of code after the jar file
 
 ```
--Dwebdriver.edge.driver=.\\vendor\\joomla-projects\\selenium-server-standalone\\bin\\webdrivers\\edge\\MicrosoftWebDriver.exe
+-Dwebdriver.edge.driver=.\\MicrosoftWebDriver.exe
 ```
 
 Change the browser setting on /tests/acceptance.suite.yml to:
