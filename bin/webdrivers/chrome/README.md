@@ -15,7 +15,7 @@ Make sure you add the webdriver directory to your $PATH in order for selenium to
 
 ###The default browser setting on /tests/codeception/acceptance.suite.yml are browser: ``'chrome'``:
 ```
-a    class_name: AcceptanceTester
+    class_name: AcceptanceTester
     modules:
         enabled:
             - Asserts
