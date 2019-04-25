@@ -2,7 +2,7 @@
 /**
  * @package    Selenium-server-standalone
  *
- * @copyright  Copyright (C) 2005 - 2017 Open Source Matters, Inc. All rights reserved.
+ * @copyright  Copyright (C) 2005 - 2019 Open Source Matters, Inc. All rights reserved.
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -19,6 +19,7 @@ class Selenium {
 	 *                              'browser' => 'firefox|chrome|MicrosoftEdge|Internet Explorer',
 	 *                              'selenium_params' => array()
 	 *                          )
+	 * @since version
 	 */
 	public function __construct($options)
 	{
@@ -93,6 +94,10 @@ class Selenium {
 		{
 			$driver['type'] = 'webdriver.edge.driver';
 		}
+		elseif ($browser == 'edg')
+		{
+			$driver['type'] = 'webdriver.edg.driver';
+		}
 		elseif ($browser == 'internet explorer')
 		{
 			$driver['type'] = 'webdriver.ie.driver';
@@ -142,6 +147,8 @@ class Selenium {
 	 * Check if local OS is Windows
 	 *
 	 * @return bool
+	 *
+	 * @since version
 	 */
 	private function isWindows()
 	{

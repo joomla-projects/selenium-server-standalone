@@ -19,6 +19,7 @@ Original jar files and checksums: [http://selenium-release.storage.googleapis.co
 * Internet Explorer 32-bit version 3.14.0
 * Internet Explorer 64-bit version 3.14.0
 * Microsoft Edge version FOD
+* Microsoft Edge Chromium version 75.0.137.0
 * Firefox Gecko / Marionette Driver version 0.23
 
 ## Installation
