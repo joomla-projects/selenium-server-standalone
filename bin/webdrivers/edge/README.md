@@ -37,7 +37,7 @@ Edge webdriver for Selenium Server Standalone, the browser automation framework.
 
 ## Version
 
-Version: 75.0.137.0
+Version: 77.0.223.0
 
 ## Installation
 
