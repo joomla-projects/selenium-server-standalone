@@ -7,7 +7,7 @@ Composer distribution of Selenium Server Standalone, the browser automation fram
 
 ## Version
 Release numbers are synchronised with the Selenium versions.
-Version of this release is *v3.141.0*
+Version of this release is *v3.141.59*
 
 Selenium Changelog: [https://github.com/SeleniumHQ/selenium/blob/master/java/CHANGELOG](https://github.com/SeleniumHQ/selenium/blob/master/java/CHANGELOG)
 
@@ -15,12 +15,12 @@ Original jar files and checksums: [http://selenium-release.storage.googleapis.co
 
 ## Webdriver
 
-* Google Chrome version 2.43
-* Internet Explorer 32-bit version 3.14.0
-* Internet Explorer 64-bit version 3.14.0
-* Microsoft Edge version FOD
-* Microsoft Edge Chromium version 75.0.137.0
-* Firefox Gecko / Marionette Driver version 0.23
+* Google Chrome version 76.0.3809.68 (win/linux/mac)
+* Internet Explorer 32-bit version 3.14.0 (win)
+* Internet Explorer 64-bit version 3.14.0 (win)
+* Microsoft Edge version FOD (win)
+* Microsoft Edge Chromium version 77.0.223.0 (win/linux/mac)
+* Firefox Gecko / Marionette Driver version 0.24 (win/linux/mac)
 
 ## Installation
 
